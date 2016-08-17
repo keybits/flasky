@@ -12,9 +12,9 @@ class SeleniumTestCase(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
-        # start Firefox
+        # start Chrome
         try:
-            cls.client = webdriver.Firefox()
+            cls.client = webdriver.Chrome()
         except:
             pass
 
